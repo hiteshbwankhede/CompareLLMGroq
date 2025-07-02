@@ -35,7 +35,7 @@ with col2:
     model_2 = st.selectbox("Model 2", model_options, index=1)
 
 # Prompt template
-template = PromptTemplate.from_template("Tell me a story about:{user_prompt}")
+template = PromptTemplate.from_template("{user_prompt}")
 
 # Run when button clicked
 if st.button("🔍 Compare"):
